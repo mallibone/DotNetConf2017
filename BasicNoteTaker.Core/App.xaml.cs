@@ -11,7 +11,12 @@ namespace BasicNoteTaker.Core
 		{
 			InitializeComponent();
 
-		    MainPage = new NavigationPage(new NoteTakerPage());
+		    var mainPage = new NavigationPage(new NoteTakerPage());
+		    mainPage.BarBackgroundColor = (Color) Application.Current.Resources["MainColor"];
+
+            mainPage.BarTextColor = Color.White;
+
+		    MainPage = mainPage;
 		}
 
 	    public static INotesService NoteService { get; } = new NotesServiceStub();
