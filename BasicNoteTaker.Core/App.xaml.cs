@@ -19,7 +19,7 @@ namespace BasicNoteTaker.Core
 		    MainPage = mainPage;
 		}
 
-	    public static INotesService NoteService { get; } = new NotesServiceStub();
+	    public static INotesService NoteService { get; } = new FileBaseNoteService();
 
 	    protected override void OnStart ()
 		{

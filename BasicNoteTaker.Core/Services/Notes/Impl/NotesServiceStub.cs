@@ -15,10 +15,10 @@ namespace BasicNoteTaker.Core.Services.Notes.Impl
         {
             _notes = new List<NoteItem>
             {
-                new NoteItem {Id = "1", Title = "Local .Net Conf", Content = "Show how whats new in Xamarin.\n\n=>Don't forget to show the all new and cool Xamarin Live Player\n\nOh yeah and the .Net Standard stuff...", Created = DateTime.Now.AddMonths(-1), LastEdited = DateTime.Now.AddMonths(-1)},
-                new NoteItem {Id = "2", Title = "Plan Date Night", Content = "Don't forget to ask your wife to be your valentine on the 14. February", Created = DateTime.Now.AddDays(-7), LastEdited = DateTime.Now.AddDays(-7)},
-                new NoteItem {Id = "3", Title = "Answers for Azure Mobile App Service Q&A", Content = "- It depends\n- 42", Created = DateTime.Now.AddDays(-1), LastEdited = DateTime.Now.AddDays(-1)},
-                new NoteItem {Id = "4", Title = "Spacey Wacey Stuff", Content = "Dr. Who things and what not.", Created = DateTime.Now.AddHours(-1), LastEdited = DateTime.Now.AddHours(-1)},
+                new NoteItem {Id = 1, Title = "Local .Net Conf", Content = "Show how whats new in Xamarin.\n\n=>Don't forget to show the all new and cool Xamarin Live Player\n\nOh yeah and the .Net Standard stuff...", Created = DateTime.Now.AddMonths(-1), LastEdited = DateTime.Now.AddMonths(-1)},
+                new NoteItem {Id = 2, Title = "Plan Date Night", Content = "Don't forget to ask your wife to be your valentine on the 14. February", Created = DateTime.Now.AddDays(-7), LastEdited = DateTime.Now.AddDays(-7)},
+                new NoteItem {Id = 3, Title = "Prepare Answers for Q&A", Content = "- It depends\n- 42", Created = DateTime.Now.AddDays(-1), LastEdited = DateTime.Now.AddDays(-1)},
+                new NoteItem {Id = 4, Title = "Spacey Wacey Stuff", Content = "Dr. Who things and what not.", Created = DateTime.Now.AddHours(-1), LastEdited = DateTime.Now.AddHours(-1)},
             };
         }
 
@@ -50,7 +50,7 @@ namespace BasicNoteTaker.Core.Services.Notes.Impl
 
             NoteItem storedNote;
 
-            if (!string.IsNullOrEmpty(note.Id))
+            if (note.Id != 0)
             {
                 storedNote = _notes.FirstOrDefault(n => n.Id == note.Id);
                 if (storedNote == null) return false;
