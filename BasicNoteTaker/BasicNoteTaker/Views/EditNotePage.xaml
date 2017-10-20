@@ -2,6 +2,8 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="BasicNoteTaker.Views.EditNotePage">
+    <ContentPage.Resources>
+    </ContentPage.Resources>
 
     <Grid Margin="0"
           AutomationId="EditPage">
@@ -26,12 +28,11 @@
         <Button AutomationId="DeleteNote"
                 Text="Delete"
                 Grid.Row="3"
-                Command="{Binding DeleteNote}"
-                Margin="-8,0,-8,-6" />
+                Style="{StaticResource DestructiveButtonStyle}"
+                Command="{Binding DeleteNote}"/>
         <Button AutomationId="StoreNote"
                 Text="Store"
                 Grid.Row="4"
-                Margin="-8,0,-8,0"
                 Command="{Binding SaveNote}" />
     </Grid>
 

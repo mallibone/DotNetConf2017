@@ -2,9 +2,40 @@
 <Application xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="BasicNoteTaker.App">
-	<Application.Resources>
+    <Application.Resources>
+        <!-- Application resource dictionary -->
+        <ResourceDictionary>
+            <Color x:Key="MainColor">#FA7D19</Color>
+            <Color x:Key="MainTextColor">#404545</Color>
+            <Color x:Key="DestructiveColor">Red</Color>
 
-		<!-- Application resource dictionary -->
+            <OnPlatform x:TypeArguments="Thickness"
+                        Android="16,0"
+                        iOS="16,16"
+                        WinPhone="8,8"
+                        x:Key="ButtonMargin" />
 
-	</Application.Resources>
+            <Style TargetType="Label">
+                <Setter Property="TextColor"
+                        Value="{StaticResource MainTextColor}" />
+            </Style>
+            <Style TargetType="Button">
+                <Setter Property="BackgroundColor"
+                        Value="{DynamicResource MainColor}" />
+                <Setter Property="TextColor"
+                        Value="{StaticResource MainTextColor}" />
+                <Setter Property="Margin"
+                        Value="{StaticResource ButtonMargin}" />
+            </Style>
+            <Style x:Key="DestructiveButtonStyle"
+                   TargetType="Button"
+                   BasedOn="{StaticResource Xamarin.Forms.Button}">
+                <Setter Property="BackgroundColor"
+                        Value="Transparent" />
+                <Setter Property="TextColor"
+                        Value="{StaticResource DestructiveColor}" />
+            </Style>
+        </ResourceDictionary>
+
+    </Application.Resources>
 </Application>
