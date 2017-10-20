@@ -16,6 +16,7 @@ Global
 		BasicNoteTaker\BasicNoteTaker\BasicNoteTaker.projitems*{3c10a419-2955-4704-853c-3bcbbe0946dd}*SharedItemsImports = 13
 		BasicNoteTaker\BasicNoteTaker\BasicNoteTaker.projitems*{57e7686c-0c12-4954-a95b-e9a484b88d33}*SharedItemsImports = 4
 		BasicNoteTaker\BasicNoteTaker\BasicNoteTaker.projitems*{a994c57a-d59e-4030-a83b-2b7d8862c673}*SharedItemsImports = 4
+		BasicNoteTaker\BasicNoteTaker\BasicNoteTaker.projitems*{c3d2cfb5-94e3-4e95-b429-5abc06b9590f}*SharedItemsImports = 4
 	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Ad-Hoc|Any CPU = Ad-Hoc|Any CPU

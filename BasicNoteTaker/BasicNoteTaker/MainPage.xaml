@@ -4,8 +4,9 @@
              xmlns:local="clr-namespace:BasicNoteTaker"
              x:Class="BasicNoteTaker.MainPage">
 
-	<Label Text="Welcome to Xamarin Forms!" 
-           VerticalOptions="Center" 
-           HorizontalOptions="Center" />
+    <StackLayout>
+        <Label Text="Welcome to Xamarin.Forms!"></Label>
+    </StackLayout>
+
 
 </ContentPage>

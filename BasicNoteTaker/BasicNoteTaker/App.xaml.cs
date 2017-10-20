@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-
+using BasicNoteTaker.Views;
 using Xamarin.Forms;
 
 namespace BasicNoteTaker
@@ -13,7 +13,7 @@ namespace BasicNoteTaker
 		{
 			InitializeComponent();
 
-			MainPage = new BasicNoteTaker.MainPage();
+		    MainPage = new EditNotePage();
 		}
 
 		protected override void OnStart ()

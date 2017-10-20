@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BasicNoteTaker.Views.EditNotePage">
+
+    <Grid Margin="0"
+          AutomationId="EditPage">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="24" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <Entry AutomationId="NoteTitle"
+               Placeholder="Note Title"
+               Text="{Binding Title}"
+               Margin="8,16" />
+
+        <Editor AutomationId="NoteContent"
+                Text="{Binding Content}"
+                Grid.Row="1"
+                Margin="8" />
+
+        <Button AutomationId="DeleteNote"
+                Text="Delete"
+                Grid.Row="3"
+                Command="{Binding DeleteNote}"
+                Margin="-8,0,-8,-6" />
+        <Button AutomationId="StoreNote"
+                Text="Store"
+                Grid.Row="4"
+                Margin="-8,0,-8,0"
+                Command="{Binding SaveNote}" />
+    </Grid>
+
+</ContentPage>
