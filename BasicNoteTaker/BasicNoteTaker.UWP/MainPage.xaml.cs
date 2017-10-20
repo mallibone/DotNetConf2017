@@ -21,7 +21,7 @@ namespace BasicNoteTaker.UWP
         {
             this.InitializeComponent();
 
-            LoadApplication(new BasicNoteTaker.App());
+            LoadApplication(new BasicNoteTaker.Core.App());
         }
     }
 }

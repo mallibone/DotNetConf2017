@@ -1,10 +1,12 @@
 ﻿{
   "dependencies": {
     "Microsoft.NETCore.UniversalWindowsPlatform": "5.2.2",
-    "Xamarin.Forms": "2.4.0.266-pre1"
+    "NETStandard.Library": "2.0.0",
+    "Newtonsoft.Json": "10.0.3",
+    "Xamarin.Forms": "2.4.0.282"
   },
   "frameworks": {
-    "uap10.0": {}
+    "uap10.0.16299": {}
   },
   "runtimes": {
     "win10-arm": {},

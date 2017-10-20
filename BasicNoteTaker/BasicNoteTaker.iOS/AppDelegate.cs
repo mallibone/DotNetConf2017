@@ -23,7 +23,7 @@ namespace BasicNoteTaker.iOS
 		public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 		{
 			global::Xamarin.Forms.Forms.Init ();
-			LoadApplication (new BasicNoteTaker.App ());
+			LoadApplication (new BasicNoteTaker.Core.App ());
 
 			return base.FinishedLaunching (app, options);
 		}

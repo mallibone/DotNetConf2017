@@ -1,23 +1,17 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.27009.1
+VisualStudioVersion = 15.0.27004.2005
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "BasicNoteTaker", "BasicNoteTaker\BasicNoteTaker\BasicNoteTaker.shproj", "{3C10A419-2955-4704-853C-3BCBBE0946DD}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BasicNoteTaker.Android", "BasicNoteTaker\BasicNoteTaker.Android\BasicNoteTaker.Android.csproj", "{A994C57A-D59E-4030-A83B-2B7D8862C673}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BasicNoteTaker.iOS", "BasicNoteTaker\BasicNoteTaker.iOS\BasicNoteTaker.iOS.csproj", "{57E7686C-0C12-4954-A95B-E9A484B88D33}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BasicNoteTaker.UWP", "BasicNoteTaker\BasicNoteTaker.UWP\BasicNoteTaker.UWP.csproj", "{C3D2CFB5-94E3-4E95-B429-5ABC06B9590F}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BasicNoteTaker.Core", "BasicNoteTaker.Core\BasicNoteTaker.Core.csproj", "{EC772F2A-4662-4FB4-B463-4CD71CBE96CA}"
+EndProject
 Global
-	GlobalSection(SharedMSBuildProjectFiles) = preSolution
-		BasicNoteTaker\BasicNoteTaker\BasicNoteTaker.projitems*{3c10a419-2955-4704-853c-3bcbbe0946dd}*SharedItemsImports = 13
-		BasicNoteTaker\BasicNoteTaker\BasicNoteTaker.projitems*{57e7686c-0c12-4954-a95b-e9a484b88d33}*SharedItemsImports = 4
-		BasicNoteTaker\BasicNoteTaker\BasicNoteTaker.projitems*{a994c57a-d59e-4030-a83b-2b7d8862c673}*SharedItemsImports = 4
-		BasicNoteTaker\BasicNoteTaker\BasicNoteTaker.projitems*{c3d2cfb5-94e3-4e95-b429-5abc06b9590f}*SharedItemsImports = 4
-	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Ad-Hoc|Any CPU = Ad-Hoc|Any CPU
 		Ad-Hoc|ARM = Ad-Hoc|ARM
@@ -261,6 +255,54 @@ Global
 		{C3D2CFB5-94E3-4E95-B429-5ABC06B9590F}.Release|x86.ActiveCfg = Release|x86
 		{C3D2CFB5-94E3-4E95-B429-5ABC06B9590F}.Release|x86.Build.0 = Release|x86
 		{C3D2CFB5-94E3-4E95-B429-5ABC06B9590F}.Release|x86.Deploy.0 = Release|x86
+		{EC772F2A-4662-4FB4-B463-4CD71CBE96CA}.Ad-Hoc|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC772F2A-4662-4FB4-B463-4CD71CBE96CA}.Ad-Hoc|Any CPU.Build.0 = Debug|Any CPU
+		{EC772F2A-4662-4FB4-B463-4CD71CBE96CA}.Ad-Hoc|ARM.ActiveCfg = Debug|Any CPU
+		{EC772F2A-4662-4FB4-B463-4CD71CBE96CA}.Ad-Hoc|ARM.Build.0 = Debug|Any CPU
+		{EC772F2A-4662-4FB4-B463-4CD71CBE96CA}.Ad-Hoc|iPhone.ActiveCfg = Debug|Any CPU
+		{EC772F2A-4662-4FB4-B463-4CD71CBE96CA}.Ad-Hoc|iPhone.Build.0 = Debug|Any CPU
+		{EC772F2A-4662-4FB4-B463-4CD71CBE96CA}.Ad-Hoc|iPhoneSimulator.ActiveCfg = Debug|Any CPU
+		{EC772F2A-4662-4FB4-B463-4CD71CBE96CA}.Ad-Hoc|iPhoneSimulator.Build.0 = Debug|Any CPU
+		{EC772F2A-4662-4FB4-B463-4CD71CBE96CA}.Ad-Hoc|x64.ActiveCfg = Debug|Any CPU
+		{EC772F2A-4662-4FB4-B463-4CD71CBE96CA}.Ad-Hoc|x64.Build.0 = Debug|Any CPU
+		{EC772F2A-4662-4FB4-B463-4CD71CBE96CA}.Ad-Hoc|x86.ActiveCfg = Debug|Any CPU
+		{EC772F2A-4662-4FB4-B463-4CD71CBE96CA}.Ad-Hoc|x86.Build.0 = Debug|Any CPU
+		{EC772F2A-4662-4FB4-B463-4CD71CBE96CA}.AppStore|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC772F2A-4662-4FB4-B463-4CD71CBE96CA}.AppStore|Any CPU.Build.0 = Debug|Any CPU
+		{EC772F2A-4662-4FB4-B463-4CD71CBE96CA}.AppStore|ARM.ActiveCfg = Debug|Any CPU
+		{EC772F2A-4662-4FB4-B463-4CD71CBE96CA}.AppStore|ARM.Build.0 = Debug|Any CPU
+		{EC772F2A-4662-4FB4-B463-4CD71CBE96CA}.AppStore|iPhone.ActiveCfg = Debug|Any CPU
+		{EC772F2A-4662-4FB4-B463-4CD71CBE96CA}.AppStore|iPhone.Build.0 = Debug|Any CPU
+		{EC772F2A-4662-4FB4-B463-4CD71CBE96CA}.AppStore|iPhoneSimulator.ActiveCfg = Debug|Any CPU
+		{EC772F2A-4662-4FB4-B463-4CD71CBE96CA}.AppStore|iPhoneSimulator.Build.0 = Debug|Any CPU
+		{EC772F2A-4662-4FB4-B463-4CD71CBE96CA}.AppStore|x64.ActiveCfg = Debug|Any CPU
+		{EC772F2A-4662-4FB4-B463-4CD71CBE96CA}.AppStore|x64.Build.0 = Debug|Any CPU
+		{EC772F2A-4662-4FB4-B463-4CD71CBE96CA}.AppStore|x86.ActiveCfg = Debug|Any CPU
+		{EC772F2A-4662-4FB4-B463-4CD71CBE96CA}.AppStore|x86.Build.0 = Debug|Any CPU
+		{EC772F2A-4662-4FB4-B463-4CD71CBE96CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC772F2A-4662-4FB4-B463-4CD71CBE96CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC772F2A-4662-4FB4-B463-4CD71CBE96CA}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{EC772F2A-4662-4FB4-B463-4CD71CBE96CA}.Debug|ARM.Build.0 = Debug|Any CPU
+		{EC772F2A-4662-4FB4-B463-4CD71CBE96CA}.Debug|iPhone.ActiveCfg = Debug|Any CPU
+		{EC772F2A-4662-4FB4-B463-4CD71CBE96CA}.Debug|iPhone.Build.0 = Debug|Any CPU
+		{EC772F2A-4662-4FB4-B463-4CD71CBE96CA}.Debug|iPhoneSimulator.ActiveCfg = Debug|Any CPU
+		{EC772F2A-4662-4FB4-B463-4CD71CBE96CA}.Debug|iPhoneSimulator.Build.0 = Debug|Any CPU
+		{EC772F2A-4662-4FB4-B463-4CD71CBE96CA}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{EC772F2A-4662-4FB4-B463-4CD71CBE96CA}.Debug|x64.Build.0 = Debug|Any CPU
+		{EC772F2A-4662-4FB4-B463-4CD71CBE96CA}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{EC772F2A-4662-4FB4-B463-4CD71CBE96CA}.Debug|x86.Build.0 = Debug|Any CPU
+		{EC772F2A-4662-4FB4-B463-4CD71CBE96CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC772F2A-4662-4FB4-B463-4CD71CBE96CA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EC772F2A-4662-4FB4-B463-4CD71CBE96CA}.Release|ARM.ActiveCfg = Release|Any CPU
+		{EC772F2A-4662-4FB4-B463-4CD71CBE96CA}.Release|ARM.Build.0 = Release|Any CPU
+		{EC772F2A-4662-4FB4-B463-4CD71CBE96CA}.Release|iPhone.ActiveCfg = Release|Any CPU
+		{EC772F2A-4662-4FB4-B463-4CD71CBE96CA}.Release|iPhone.Build.0 = Release|Any CPU
+		{EC772F2A-4662-4FB4-B463-4CD71CBE96CA}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
+		{EC772F2A-4662-4FB4-B463-4CD71CBE96CA}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
+		{EC772F2A-4662-4FB4-B463-4CD71CBE96CA}.Release|x64.ActiveCfg = Release|Any CPU
+		{EC772F2A-4662-4FB4-B463-4CD71CBE96CA}.Release|x64.Build.0 = Release|Any CPU
+		{EC772F2A-4662-4FB4-B463-4CD71CBE96CA}.Release|x86.ActiveCfg = Release|Any CPU
+		{EC772F2A-4662-4FB4-B463-4CD71CBE96CA}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

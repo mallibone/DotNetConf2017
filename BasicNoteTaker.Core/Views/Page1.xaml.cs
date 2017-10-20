@@ -7,12 +7,12 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace BasicNoteTaker.Views
+namespace BasicNoteTaker.Core.Views
 {
 	[XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class EditNotePage : ContentPage
+	public partial class Page1 : ContentPage
 	{
-		public EditNotePage ()
+		public Page1 ()
 		{
 			InitializeComponent ();
 		}
